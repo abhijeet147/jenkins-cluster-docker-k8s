@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jenkins-agent1
+  labels:
+    app: jenkins-agent
+spec:
+  containers:
+  - name: jenkins-agent1
+    image: alpine:latest
+    command: [ "sleep", "infinity" ]

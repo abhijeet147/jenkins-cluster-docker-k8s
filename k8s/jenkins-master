@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jenkins-master
+  labels:
+    app: jenkins
+spec:
+  containers:
+  - name: jenkins-master
+    image: alpine:latest
+    command: [ "sleep", "infinity" ]
